@@ -3,14 +3,14 @@
 
 // Body Styles 
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+  //background: #f3f3f3 !important;
 }
 
-.container.header {
-  background: #f3f3f3;
-}
+//.container.header {
+//  background: #f3f3f3;
+//}
 
 .body-drip {
   border-top: 8px solid #663399;
@@ -38,22 +38,43 @@ html,
   background: transparent;
 }
 
+.wud {
+  p {
+    text-align: center;
+  }
+}
+
 // Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
+table.button.cta table td {
+  //box-shadow: 10px 10px 0 $secondary-color;
+
+  a {
+    width: 400px;
+    padding: 16px 26px;
+    //width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    font-family: $header-font-family;
+    font-size: 24px;
+    color: $white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    background: $primary-color !important;
+  }
 }
 
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
-
-.wrapper.secondary {
-  background: #f3f3f3;
-}
+//
+//table.button.twitter table td {
+//  background: #1daced !important;
+//  border-color: #1daced;
+//}
+//
+//table.button.google table td {
+//  background: #DB4A39 !important;
+//  border-color: #DB4A39;
+//}
+//
+//.wrapper.secondary {
+//  background: #f3f3f3;
+//}
