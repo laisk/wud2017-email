@@ -12,8 +12,24 @@ html,
 //  background: #f3f3f3;
 //}
 
-.container.wud {
+table.container.wud {
   //background-image: linear-gradient(9deg, $secondary-color 0%, $tertiary-color 100%);
+  background-image: url(http://wudmilan.com/assets/img/newsletter/bg-newsletter.png) !important;
+  background-repeat: repeat-x !important;
+}
+
+table.container.wud-white {
+  background: $white;
+
+  h1,
+  h2,
+  h3 {
+    color: $primary-color;
+  }
+
+  p {
+    color: $black;
+  }
 }
 
 .body-drip {
@@ -47,6 +63,7 @@ html,
     text-align: center;
   }
 }
+
 
 // Social Media
 table.button.cta table td {
