@@ -6,6 +6,7 @@ body,
 html,
 .body {
   //background: #f3f3f3 !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 //.container.header {
@@ -27,14 +28,15 @@ table.container.wud-white {
     color: $primary-color;
   }
 
-  p {
+  p,
+  li {
     color: $black;
   }
 }
 
-.body-drip {
-  border-top: 8px solid #663399;
-}
+//.body-drip {
+//  border-top: 8px solid #663399;
+//}
 
 // Full Width Headers
 .header {
@@ -64,39 +66,59 @@ table.container.wud-white {
   }
 }
 
+.hero p {
+  line-height: 24px;
+  letter-spacing: 1.29px;
+}
 
 // Social Media
 table.button.cta table td {
-  //box-shadow: 10px 10px 0 $secondary-color;
+  border: 0;
 
   a {
-    width: 400px;
-    padding: 16px 26px;
-    //width: 100%;
+    padding: 15px 46px;
     height: 100%;
+    border: 0;
     border-radius: 2px;
     font-family: $header-font-family;
     font-weight: 400;
     font-size: 24px;
+    line-height: 29px;
     color: $white;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
+    background: $secondary-color !important;
+  }
+}
+
+table.button.cta.dark table td {
+  a {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 22px;
     background: $primary-color !important;
   }
 }
 
-//
-//table.button.twitter table td {
-//  background: #1daced !important;
-//  border-color: #1daced;
-//}
-//
-//table.button.google table td {
-//  background: #DB4A39 !important;
-//  border-color: #DB4A39;
-//}
-//
-//.wrapper.secondary {
-//  background: #f3f3f3;
-//}
+.wud-social-icons table.button table td {
+  border: 0;
+  width: 49px;
+  height: 49px;
+  background: $tertiary-color;
+
+  a {
+    padding: 0;
+    margin-right: 30px;
+    border: 0;
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+  }
+}
+
+.wud-social-icons table.button.wud-social-icons_email table td {
+  a {
+    margin: 0;
+  }
+}
