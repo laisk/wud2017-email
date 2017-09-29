@@ -122,3 +122,10 @@ table.button.cta.dark table td {
     margin: 0;
   }
 }
+
+a.wud-link {
+  font-family: $header-font-family;
+  font-weight: 600;
+  text-decoration: underline;
+  color: $white;
+}
