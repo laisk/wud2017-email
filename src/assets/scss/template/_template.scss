@@ -40,6 +40,15 @@ table.container.wud-figure {
   background: #f3f3f3;
 }
 
+table.container.wud-footer {
+
+  h2,
+  p {
+    padding: 0 20px;
+  }
+
+}
+
 // Full Width Headers
 .header {
   background: #8a8a8a;
@@ -80,7 +89,7 @@ table.container.wud-figure {
 
 .wud-figure {
 
-  th{
+  th {
     padding: 0;
   }
 
@@ -94,6 +103,28 @@ table.container.wud-figure {
     color: $black;
     text-decoration: underline;
   }
+
+  @media only screen and (max-width: 569px) {
+    .wud-figure-container table tbody th {
+
+      img {
+        height: auto !important;
+        //max-width: none !important;
+        //width: 100% !important;
+      }
+    }
+
+    p {
+      padding: 20px !important;
+    }
+  }
+
+  @media only screen and (min-width: 570px) {
+    .wud-figure-container {
+      display: none !important;
+    }
+  }
+
 }
 
 .list {
@@ -101,14 +132,13 @@ table.container.wud-figure {
   max-width: none;
 }
 
-@media only screen and (min-width: 596px){
+@media only screen and (min-width: 596px) {
   .list {
-    width: 370px;
+    width: 370px !important;
     max-width: 350px;
     margin-left: 90px;
   }
 }
-
 
 // Social Media
 table.button.cta table td {
